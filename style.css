@@ -89,9 +89,8 @@ form[role="search"] {
 }
 
 h1 {
-  font-size: 1.5rem;
-  color: #0f0404;
-  font-family: playwriter, sans-serif;
+  font-size: 5rem;
+  color: #0f0404;;
   src: url('assets/fonts/Playwrite_NZ_Basic') format('regular 72');
   font-weight: normal;
   font-style: normal;
@@ -172,6 +171,182 @@ li a:hover {
   header > div:nth-child(2),
   header > div:nth-child(3) {
     padding: 0.5rem 1rem;
+  }
+}
+
+#catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#catalogo article {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(18, 17, 17, 0.15);
+}
+
+#catalogo article h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+#catalogo article img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#catalogo article p {
+  color: rgb(30, 28, 28);
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#catalogo article p:last-of-type {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0d0d0d;
+  margin: 1rem 0;
+}
+
+#catalogo article button {
+  background: #7ad9f1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: auto;
+  width: 100%;
+  font-weight: 500;
+}
+
+#catalogo article button:hover {
+  background:#e867ca;
+}
+
+#catalogo article button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  #catalogo {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  #catalogo article {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #catalogo {
+    grid-template-columns: 1fr;
+  }
+}
+
+details {
+  background:#e867ca;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+details:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+details[open] {
+  border-color:#e867ca;
+}
+
+summary {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "▶";
+  margin-right: 0.75rem;
+  transition: transform 0.3s ease;
+  color: #7ad9f1;
+  font-size: 0.8rem;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+summary:hover {
+  background: #f5f5f5;
+}
+
+details p {
+  padding: 0 1.25rem 1.25rem 2.5rem;
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  #contacto,
+  section:has(h2:first-child:contains("Preguntas frecuentes")) {
+    margin: 1rem 0.5rem;
+    padding: 0.75rem;
+  }
+  
+  #contacto h2,
+  section h2 {
+    font-size: 1rem;
   }
 }
 

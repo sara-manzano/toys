@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="catalogo de juguetes para niños y niñas de todas las edades">
-    <meta name="keywords" content="juguetes, niños, niñas, juegos, diversión">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="catalogo de juguetes para niños y niñas de todas las edades"
+    />
+    <meta name="keywords" content="juguetes, niños, niñas, juegos, diversión" />
     <title>Juguetelandia</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+  </head>
+  <body>
     <header>
       <div>
-        <p>🚚 Envío gratis desde 50€ | 🔄 Devoluciones 30 días | 🔒 Pago seguro</p>
+        <p>
+          🚚 Envío gratis desde 50€ | 🔄 Devoluciones 30 días | 🔒 Pago seguro
+        </p>
       </div>
       <div>
         <a href="login.html">Iniciar sesión</a>
@@ -23,10 +28,15 @@
       </div>
     </header>
     <nav aria-label="navegación principal">
-      <img src="assets/juguete.png" alt="Logo" class="logo">
+      <img src="assets/img/juguete.png" alt="Logo" class="logo" />
       <h1>Juguetelandia</h1>
       <form action="" method="get" role="search">
-        <input type="search" name="search" placeholder="Buscar marca, categoría" aria-label="Buscar juguetes">
+        <input
+          type="search"
+          name="search"
+          placeholder="Buscar marca, categoría"
+          aria-label="Buscar juguetes"
+        />
         <button type="submit">Buscar</button>
       </form>
     </nav>
@@ -43,8 +53,8 @@
       <li>
         <a href="Muñecas y figuras de acción">Muñecas y figuras de acción</a>
       </li>
-      <li>  
-        <a href="Vehículos y transporte">Vehículos y transporte</a>   
+      <li>
+        <a href="Vehículos y transporte">Vehículos y transporte</a>
       </li>
       <li>
         <a href="Creatividad y arte">Creatividad y arte</a>
@@ -52,6 +62,89 @@
       <li>
         <a href="Tecnología y robótica">Tecnología y robótica</a>
       </li>
-    </ul>  
-</body>
+    </ul>
+    <section id="catalogo">
+      <article>
+        <h3>Muñeca de trapo</h3>
+        <img src="assets/img/muneca.jpg" alt="Muñeca de trapo" />
+        <p>Suave y adorable, perfecta para abrazar y jugar.</p>
+        <p>Precio: 25€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Coche radio control</h3>
+        <img src="assets/img/coche.jpg" alt="Coche teledirigido" />
+        <p>Velocidad y control para horas de diversión al aire libre.</p>
+        <p>Precio: 50€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Bloques de construcción (100 piezas)</h3>
+        <img src="assets/img/bloques.jpg" alt="bloques de 100 piezas" />
+        <p>Fomenta la creatividad y habilidades motoras.</p>
+        <p>Precio: 20€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Rompecabezas 500 piezas</h3>
+        <img src="assets/img/puzzle.jpg" alt="puzzle" />
+        <p>Desafiante y divertido para todas las edades.</p>
+        <p>Precio: 15€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Peluches kawaii</h3>
+        <img src="assets/img/peluches.jpg" alt="kawaii" />
+        <p>Suaves y adorables, perfectos para abrazar.</p>
+        <p>Precio: 18€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Videojuego</h3>
+        <img src="assets/img/ghost.jpg" alt="kawaii" />
+        <p>Aventura épica con gráficos impresionantes.</p>
+        <p>Precio: 70€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Kit de manualidades</h3>
+        <img src=assets/img/manualidad.jpg alt="kawaii" />
+        <p>Incluye materiales para 10 proyectos creativos.</p>
+        <p>Precio: 43€</p>
+        <button>Añadir al carrito</button>
+      </article>
+      <article>
+        <h3>Funco</h3>
+        <img src="assets/img/pokemon.jpg" alt="Funco pokemon" />
+        <p>Figura coleccionable de tu personaje favorito.</p>
+        <p>Precio: 21€</p>
+        <button>Añadir al carrito</button>
+      </article>
+    </section>
+    <section id="ofertas">
+      <ul>
+        <li>2x1 en peluches</li>
+        <li>10% descuento en juegos de mesa</li>
+      </ul>
+    </section>
+    <section>
+      <details>
+        <summary>¿Realizan envíos?</summary>
+        <p>Sí, enviamos a todo el país.</p>
+      </details>
+      <details>
+        <summary>¿Aceptan devoluciones?</summary>
+        <p>Tienes 30 días para cambios o devoluciones.</p>
+      </details>
+    </section>
+    <footer>
+      <p>&copy; 2026 Juguetelandia</p>
+      <p>Dirección: Calle Atenea 7, 28028, Madrid</p>
+      <p>Teléfono: 678450248</p>
+      <p>Email: info@juguetelandia.com</p>
+      <p>
+        <a href="#inicio">Volver arriba</a>
+      </p>
+    </footer>
+  </body>
 </html>
